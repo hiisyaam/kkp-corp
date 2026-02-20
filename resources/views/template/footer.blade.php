@@ -9,8 +9,7 @@
                     </div>
                     <div class="my-3 italic">
                         <span class="font-bold text-2xl tracking-tight text-kkpBlue">KIARASARI</span>
-                        <span class="font-bold text-2xl tracking-tight text-white">KENCANA</span>
-                        <span class="font-bold text-2xl tracking-tight text-white">PASUNDAN</span>
+                        <p class="font-bold text-2xl tracking-tight text-white">KENCANA PASUNDAN</p>
                     </div>
                     <p class="font-inter text-gray-400 text-sm leading-relaxed">
                         Perusahaan otobus virtual terdepan yang menghadirkan standar baru dunia transportasi dengan
@@ -33,17 +32,21 @@
                             <span class="material-icons-round text-kkpBlue text-xl">headset_mic</span>
                             <div>
                                 <p class="font-semibold text-white font-sans">Customer Service</p>
-                                <p>0813-1521-1836</p>
+                                <p>0813-1521-1836*</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="material-icons-round text-kkpBlue text-xl">call</span>
                             <div>
                                 <p class="font-semibold text-white font-sans">Call Center</p>
-                                <p>022-24022024</p>
+                                <p>022-24022024*</p>
                             </div>
                         </li>
                     </ul>
+                    
+                    <p class="font-inter text-[10px] text-gray-500 italic mt-2">
+                        *hanya nomor telpon palsu
+                    </p>
                 </div>
 
                 <div class="space-y-6">
