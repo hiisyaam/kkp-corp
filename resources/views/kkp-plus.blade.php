@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KKP+ Membership | KKP Corp</title>
+    <title>KKP+ Executive Membership | KKP Corp</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,8 +24,8 @@
                         kkpBlueDark: "#5baacf",
                     },
                     fontFamily: {
-                        sans: ["Montserrat", "sans-serif"], // Utama
-                        inter: ["Inter", "sans-serif"],     // Deskripsi / Detail
+                        sans: ["Montserrat", "sans-serif"], 
+                        inter: ["Inter", "sans-serif"],     
                     },
                 },
             },
@@ -37,65 +37,75 @@
 
     @include('template.nav')
 
-    <main class="flex-grow pt-32 lg:pt-40 pb-20 relative bg-kkpDark overflow-hidden flex items-center">
+    <main class="flex-grow pt-28 sm:pt-32 lg:pt-40 pb-20 relative bg-kkpDark overflow-hidden flex items-center min-h-screen">
         
         <div class="absolute top-0 right-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-kkpBlue/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
         <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#1c1c1c] rounded-full blur-[100px] pointer-events-none z-0"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             
-            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
                 
-                <div class="w-full lg:w-1/2 flex flex-col space-y-6 lg:space-y-8 z-20 order-2 lg:order-1">
+                <div class="w-full lg:w-1/2 flex flex-col z-20 order-2 lg:order-1">
                     
-                    <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-full px-5 py-2 w-max shadow-lg backdrop-blur-sm">
+                    <div class="inline-flex items-center gap-2 sm:gap-3 bg-white/5 border border-white/10 rounded-full px-4 sm:px-5 py-2 w-max shadow-lg backdrop-blur-sm mb-4 sm:mb-6">
                         <span class="material-icons-round text-kkpBlue text-sm">stars</span>
-                        <span class="text-white font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Membership Program</span>
+                        <span class="text-white font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Executive Membership</span>
                     </div>
 
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-black text-white font-sans uppercase italic tracking-wide leading-tight drop-shadow-xl">
-                        Lebih Eksklusif,<br>
-                        Bersama <span class="text-kkpBlue">KKP+</span>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-black text-white font-sans uppercase italic tracking-wide leading-none drop-shadow-xl">
+                        KKP<span class="text-kkpBlue">+</span>
                     </h1>
+                    <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-kkpBlue font-sans uppercase tracking-widest mt-2 mb-4 sm:mb-6 drop-shadow-md">
+                        Experience, Exclusive, Excellence
+                    </h2>
 
-                    <p class="text-gray-300 font-inter text-sm sm:text-base md:text-lg leading-relaxed text-justify lg:text-left max-w-xl">
-                        Bergabunglah menjadi anggota KKP+ dan nikmati pengalaman transportasi virtual dengan berbagai keuntungan premium. Cukup dengan mendaftarkan akun, Anda otomatis menjadi bagian dari keluarga besar kami.
+                    <p class="text-gray-300 font-inter text-xs sm:text-sm md:text-base leading-relaxed text-justify max-w-xl">
+                        <strong class="text-white">KKP+</strong> merupakan program executive membership dari Kiarasari Kencana Pasundan yang dirancang untuk menghadirkan layanan prioritas dan pengalaman perjalanan yang lebih personal. Program ini menjadi bentuk apresiasi tertinggi perusahaan kepada pelanggan dan mitra terpilih, melalui akses istimewa dan hubungan profesional jangka panjang.
                     </p>
 
-                    <div class="flex flex-col space-y-4 pt-2">
-                        <div class="flex items-start gap-4 p-4 bg-[#1c1c1c]/60 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-kkpBlue/30 transition-all duration-300">
+                    <div class="relative z-10 border-l-4 border-kkpBlue pl-4 sm:pl-5 pr-3 py-3 sm:py-4 my-5 sm:my-6 rounded-r-xl sm:rounded-r-2xl bg-white/5 backdrop-blur-sm border-y border-r border-white/5 shadow-lg max-w-xl">
+                        <span class="block text-kkpBlue font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest mb-1.5">Visi Program</span>
+                        <p class="text-gray-200 font-inter text-[11px] sm:text-sm leading-relaxed italic font-medium drop-shadow-md text-justify">
+                            "Menjadi standar keanggotaan premium yang merepresentasikan profesionalisme, loyalitas, dan kemitraan berkelanjutan antara perusahaan dan pelanggan."
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col space-y-3 sm:space-y-4 pt-2">
+                        
+                        <div class="flex items-start gap-4 p-3 sm:p-4 bg-[#1c1c1c]/60 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-kkpBlue/30 transition-all duration-300">
                             <div class="w-10 h-10 shrink-0 bg-kkpBlue/10 rounded-full flex items-center justify-center text-kkpBlue">
-                                <span class="material-icons-round text-xl">confirmation_number</span>
+                                <span class="material-icons-round text-lg sm:text-xl">support_agent</span>
                             </div>
                             <div>
-                                <h4 class="text-white font-bold font-sans text-sm md:text-base mb-1">Akses Tiket Lebih Cepat</h4>
-                                <p class="text-gray-400 font-inter text-xs md:text-sm">Prioritas dalam pemilihan kursi dan pemesanan armada khusus.</p>
+                                <h4 class="text-white font-bold font-sans text-sm md:text-base mb-1">Priority Service</h4>
+                                <p class="text-gray-400 font-inter text-[11px] sm:text-xs md:text-sm leading-relaxed">Akses layanan prioritas dalam reservasi, konfirmasi perjalanan, serta dukungan komunikasi yang lebih responsif.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4 p-4 bg-[#1c1c1c]/60 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-kkpBlue/30 transition-all duration-300">
+                        <div class="flex items-start gap-4 p-3 sm:p-4 bg-[#1c1c1c]/60 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-kkpBlue/30 transition-all duration-300">
                             <div class="w-10 h-10 shrink-0 bg-kkpBlue/10 rounded-full flex items-center justify-center text-kkpBlue">
-                                <span class="material-icons-round text-xl">card_giftcard</span>
+                                <span class="material-icons-round text-lg sm:text-xl">workspace_premium</span>
                             </div>
                             <div>
-                                <h4 class="text-white font-bold font-sans text-sm md:text-base mb-1">Promo & Diskon Eksklusif</h4>
-                                <p class="text-gray-400 font-inter text-xs md:text-sm">Dapatkan penawaran harga spesial yang hanya tersedia untuk member.</p>
+                                <h4 class="text-white font-bold font-sans text-sm md:text-base mb-1">Executive Recognition</h4>
+                                <p class="text-gray-400 font-inter text-[11px] sm:text-xs md:text-sm leading-relaxed">Status resmi sebagai Member KKP+ dengan identitas eksklusif sebagai simbol kepercayaan dan loyalitas.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4 p-4 bg-[#1c1c1c]/60 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-kkpBlue/30 transition-all duration-300">
+                        <div class="flex items-start gap-4 p-3 sm:p-4 bg-[#1c1c1c]/60 border border-white/5 rounded-2xl hover:bg-white/5 hover:border-kkpBlue/30 transition-all duration-300">
                             <div class="w-10 h-10 shrink-0 bg-kkpBlue/10 rounded-full flex items-center justify-center text-kkpBlue">
-                                <span class="material-icons-round text-xl">loyalty</span>
+                                <span class="material-icons-round text-lg sm:text-xl">loyalty</span>
                             </div>
                             <div>
-                                <h4 class="text-white font-bold font-sans text-sm md:text-base mb-1">KKP Reward Points</h4>
-                                <p class="text-gray-400 font-inter text-xs md:text-sm">Kumpulkan poin di setiap perjalanan untuk ditukarkan dengan merchandise atau tiket gratis.</p>
+                                <h4 class="text-white font-bold font-sans text-sm md:text-base mb-1">Loyalty Appreciation</h4>
+                                <p class="text-gray-400 font-inter text-[11px] sm:text-xs md:text-sm leading-relaxed">Program penghargaan berbasis loyalitas melalui akumulasi poin perjalanan dan benefit khusus bagi member aktif.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-col gap-4 pt-6">
-                        <a href="/register" class="bg-kkpBlue text-kkpDark px-8 py-3.5 rounded-xl font-bold hover:bg-white hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_10px_20px_rgba(140,201,233,0.3)]">
+                    <div class="flex flex-col sm:flex-row gap-4 pt-6 sm:pt-8 w-full max-w-xl">
+                        <a href="/register" class="w-full sm:w-auto flex-1 bg-kkpBlue text-kkpDark px-6 py-3.5 rounded-xl font-bold hover:bg-white hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_10px_20px_rgba(140,201,233,0.3)]">
                             Daftar KKP+
                             <span class="material-icons-round text-lg">arrow_forward</span>
                         </a>
