@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { kkpDark: "#262626", kkpBlue: "#8cc9e9", kkpBlueDark: "#5baacf" },
+                    colors: { kkpDark: "#262626", kkpBlue: "#8cc9e9", kkpBlueDark: "#5baacf", kkpbf:"#bfbfbf" },
                     fontFamily: { sans: ["Montserrat", "sans-serif"], inter: ["Inter", "sans-serif"] },
                 },
             },
@@ -46,10 +46,10 @@
                 <a href="/perjalanan" class="inline-flex items-center gap-2 text-gray-400 hover:text-kkpBlue transition-colors font-inter text-xs sm:text-sm mb-4">
                     <span class="material-icons-round text-sm">arrow_back</span> Kembali ke Wilayah
                 </a>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white font-sans uppercase italic tracking-wide drop-shadow-2xl mb-4">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-kkpbf font-sans uppercase italic tracking-wide drop-shadow-2xl mb-4">
                     RUTE <span class="text-kkpBlue">{{ $wilayah->nama_wilayah }}</span>
                 </h1>
-                <p class="text-gray-300 font-inter text-xs sm:text-sm md:text-base max-w-2xl mx-auto drop-shadow-md">
+                <p class="text-white font-inter text-xs sm:text-sm md:text-base max-w-2xl mx-auto drop-shadow-md">
                     Jadwal keberangkatan dan informasi trayek lengkap untuk wilayah {{ $wilayah->nama_wilayah }}.
                 </p>
             </div>
@@ -91,7 +91,7 @@
 
                                             <div class="flex flex-col items-center justify-center shrink-0 w-full sm:w-32 border-b sm:border-b-0 sm:border-r border-white/10 pb-4 sm:pb-0 sm:pr-4 relative z-10 text-center">
                                                 <span class="material-icons-round text-kkpBlue text-xl sm:text-2xl mb-1">schedule</span>
-                                                <span class="text-sm sm:text-base font-black text-white font-sans leading-tight px-2">{{ $rute->waktu_berangkat }}</span>
+                                                <span class="text-sm sm:text-base font-black text-kkpbf font-sans leading-tight px-2">{{ $rute->waktu_berangkat }}</span>
                                             </div>
 
                                             <div class="flex-1 flex flex-col justify-center text-center sm:text-left relative z-10 w-full">
@@ -102,7 +102,7 @@
                                                     </span>
                                                 </div>
 
-                                                <h4 class="text-base sm:text-lg md:text-xl font-black text-white font-sans uppercase flex flex-col min-[400px]:flex-row items-center sm:items-start gap-1 min-[400px]:gap-2 mb-1.5 leading-tight">
+                                                <h4 class="text-base sm:text-lg md:text-xl font-black text-kkpbf font-sans uppercase flex flex-col min-[400px]:flex-row items-center sm:items-start gap-1 min-[400px]:gap-2 mb-1.5 leading-tight">
                                                     <span>{{ $rute->asal }}</span>
                                                     <span class="material-icons-round text-gray-500 text-sm sm:text-base hidden min-[400px]:inline-block">arrow_forward</span>
                                                     <span class="material-icons-round text-gray-500 text-sm sm:text-base min-[400px]:hidden">arrow_downward</span>

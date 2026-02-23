@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap"
         rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -22,6 +23,7 @@
                         kkpDark: "#262626",
                         kkpBlue: "#8cc9e9",
                         kkpBlueDark: "#5baacf",
+                        kkpbf:"#bfbfbf"
                     },
                     fontFamily: {
                         sans: ["Montserrat", "sans-serif"], 
@@ -50,10 +52,10 @@
                     
                     <div class="inline-flex items-center gap-2 sm:gap-3 bg-white/5 border border-white/10 rounded-full px-4 sm:px-5 py-2 w-max shadow-lg backdrop-blur-sm mb-4 sm:mb-6">
                         <span class="material-icons-round text-kkpBlue text-sm">stars</span>
-                        <span class="text-white font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Executive Membership</span>
+                        <span class="text-white font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Execlusive Membership</span>
                     </div>
 
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-black text-white font-sans uppercase italic tracking-wide leading-none drop-shadow-xl">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-black text-kkpbf font-sans uppercase italic tracking-wide leading-none drop-shadow-xl">
                         KKP<span class="text-kkpBlue">+</span>
                     </h1>
                     <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-kkpBlue font-sans uppercase tracking-widest mt-2 mb-4 sm:mb-6 drop-shadow-md">

@@ -10,7 +10,9 @@ class KelasController extends Controller
     //
     public function index()
     {
-        $kelas = Kelas::orderBy('nama_kelas')->get();
+        $kelas = Kelas::whereBetween('id', [1, 9])
+              ->orderBy('id')
+              ->get();
 
         return view('armada.index', compact('kelas'));
     }

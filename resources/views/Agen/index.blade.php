@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,6 +20,7 @@
                         kkpDark: "#262626",
                         kkpBlue: "#8cc9e9",
                         kkpBlueDark: "#5baacf",
+                        kkpbf:"#bfbfbf"
                     },
                     fontFamily: {
                         sans: ["Montserrat", "sans-serif"],
@@ -57,10 +58,10 @@
                     <h3 class="text-kkpBlue font-bold font-sans text-[10px] min-[320px]:text-xs md:text-sm uppercase tracking-widest">Titik Keberangkatan</h3>
                     <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                 </div>
-                <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide drop-shadow-md">
+                <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide drop-shadow-md">
                     JARINGAN <span class="text-kkpBlue">AGEN RESMI</span>
                 </h2>
-                <p class="text-gray-400 font-inter text-xs sm:text-sm md:text-base mt-4 max-w-2xl mx-auto leading-relaxed">
+                <p class="text-white font-inter text-xs sm:text-sm md:text-base mt-4 max-w-2xl mx-auto leading-relaxed">
                     Temukan lokasi agen pembelian tiket dan titik keberangkatan armada KKP terdekat di kota Anda.
                 </p>
             </div>
@@ -86,7 +87,7 @@
                             @foreach($w->bagian as $b)
                                 <div class="mb-10 sm:mb-14">
                                     <div class="flex items-center gap-4 mb-6 sm:mb-8">
-                                        <h3 class="text-lg sm:text-xl md:text-2xl font-black text-white font-sans uppercase tracking-widest">
+                                        <h3 class="text-lg sm:text-xl md:text-2xl font-black text-kkpbf font-sans uppercase tracking-widest">
                                             Area <span class="text-kkpBlue">{{ $b->nama_bagian }}</span>
                                         </h3>
                                         <div class="flex-1 h-px bg-gradient-to-r from-white/20 to-transparent"></div>
@@ -103,7 +104,7 @@
                                                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-kkpBlue group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors">
                                                         <span class="material-icons-round text-lg sm:text-xl">location_city</span>
                                                     </div>
-                                                    <h4 class="text-base sm:text-lg font-bold text-white font-sans uppercase tracking-wide">
+                                                    <h4 class="text-base sm:text-lg font-bold text-kkpbf font-sans uppercase tracking-wide">
                                                         {{ $k->nama_kota }}
                                                     </h4>
                                                 </div>

@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap"
         rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,6 +22,7 @@
                         kkpDark: "#262626",
                         kkpBlue: "#8cc9e9",
                         kkpBlueDark: "#5baacf",
+                        kkpbf: "#bfbfbf",
                     },
                     fontFamily: {
                         sans: ["Montserrat", "sans-serif"], 
@@ -80,8 +81,8 @@
                         <h3 class="text-kkpBlue font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest drop-shadow-md">Company Profile</h3>
                         <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full md:hidden"></span>
                     </div>
-                    <h1 class="text-2xl min-[320px]:text-3xl sm:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide mb-3 sm:mb-4 drop-shadow-lg leading-tight">
-                        KKP <span class="text-kkpBlue">CORPORATION</span>
+                    <h1 class="text-2xl min-[320px]:text-3xl sm:text-4xl lg:text-5xl font-black text-kkpBlue font-sans uppercase italic tracking-wide mb-3 sm:mb-4 drop-shadow-lg leading-tight">
+                        KKP <span class="text-kkpbf">CORPORATION</span>
                     </h1>
                     <p class="text-gray-300 font-inter text-[11px] min-[320px]:text-xs sm:text-sm md:text-base leading-relaxed drop-shadow-md text-justify md:text-left">
                         Induk usaha yang mengelola dan mengembangkan ekosistem transportasi otobus virtual secara profesional, inovatif, dan berkelas untuk menghadirkan standar baru dalam setiap perjalanan Anda.
@@ -126,7 +127,7 @@
                             <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                             <h3 class="text-kkpBlue font-bold font-sans text-[10px] min-[320px]:text-xs md:text-sm uppercase tracking-widest">Tentang Perusahaan</h3>
                         </div>
-                        <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide leading-tight drop-shadow-md">
+                        <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide leading-tight drop-shadow-md">
                             OTOBUS VIRTUAL <span class="text-kkpBlue">KKP</span>
                         </h2>
                     </div>
@@ -168,7 +169,7 @@
                         <h3 class="text-kkpBlue font-bold font-sans text-[10px] min-[320px]:text-xs md:text-sm uppercase tracking-widest">Perjalanan Kami</h3>
                         <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                     </div>
-                    <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide drop-shadow-md">
+                    <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide drop-shadow-md">
                         SEJARAH SINGKAT
                     </h2>
                 </div>
@@ -248,7 +249,7 @@
                             <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full shadow-[0_0_10px_rgba(140,201,233,0.5)]"></span>
                             <h3 class="text-kkpBlue font-bold font-sans text-[10px] min-[320px]:text-xs md:text-sm uppercase tracking-widest drop-shadow-md">Visi Perusahaan</h3>
                         </div>
-                        <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl font-black text-white font-sans uppercase italic tracking-wide leading-tight mb-5 sm:mb-8 relative z-10 drop-shadow-lg">
+                        <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl font-black text-kkpbf font-sans uppercase italic tracking-wide leading-tight mb-5 sm:mb-8 relative z-10 drop-shadow-lg">
                             Standar Baru <br><span class="text-kkpBlue">Transportasi Virtual</span>
                         </h2>
                         <div class="relative z-10 border-l-4 border-kkpBlue pl-4 sm:pl-5 pr-3 sm:pr-4 py-3 sm:py-4 rounded-r-xl sm:rounded-r-2xl bg-white/5 backdrop-blur-sm border-y border-r border-white/5 shadow-lg">
@@ -309,7 +310,7 @@
                         <h3 class="text-kkpBlue font-bold font-sans text-[10px] min-[320px]:text-xs md:text-sm uppercase tracking-widest">Pondasi Kami</h3>
                         <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                     </div>
-                    <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide drop-shadow-md">
+                    <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide drop-shadow-md">
                         <span class="text-kkpBlue">KKP</span> – NILAI INTI PERUSAHAAN
                     </h2>
                 </div>
@@ -321,7 +322,7 @@
                             <div class="w-10 h-10 sm:w-14 sm:h-14 bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-kkpBlue mb-4 sm:mb-5 group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors duration-300">
                                 <span class="material-icons-round text-xl sm:text-3xl">workspace_premium</span>
                             </div>
-                            <h4 class="text-base min-[320px]:text-lg sm:text-2xl font-black text-white font-sans tracking-wide uppercase"><span class="text-2xl sm:text-4xl text-kkpBlue">K</span>ualitas<br>Profesional</h4>
+                            <h4 class="text-base min-[320px]:text-lg sm:text-2xl font-black text-kkpbf font-sans tracking-wide uppercase"><span class="text-2xl sm:text-4xl text-kkpBlue">K</span>ualitas<br>Profesional</h4>
                         </div>
                         <p class="text-gray-300 font-inter text-[11px] min-[320px]:text-xs sm:text-sm leading-relaxed text-justify relative z-10 mt-auto">Menjalankan seluruh operasional secara profesional, bertanggung jawab, dan konsisten dengan standar tinggi demi menjamin keamanan, ketertiban, serta keandalan setiap perjalanan virtual.</p>
                     </div>
@@ -332,7 +333,7 @@
                             <div class="w-10 h-10 sm:w-14 sm:h-14 bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-kkpBlue mb-4 sm:mb-5 group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors duration-300">
                                 <span class="material-icons-round text-xl sm:text-3xl">airline_seat_recline_extra</span>
                             </div>
-                            <h4 class="text-base min-[320px]:text-lg sm:text-2xl font-black text-white font-sans tracking-wide uppercase"><span class="text-2xl sm:text-4xl text-kkpBlue">K</span>enyamanan<br>Berkelas</h4>
+                            <h4 class="text-base min-[320px]:text-lg sm:text-2xl font-black text-kkpbf font-sans tracking-wide uppercase"><span class="text-2xl sm:text-4xl text-kkpBlue">K</span>enyamanan<br>Berkelas</h4>
                         </div>
                         <p class="text-gray-300 font-inter text-[11px] min-[320px]:text-xs sm:text-sm leading-relaxed text-justify relative z-10 mt-auto">Menghadirkan pengalaman perjalanan yang aman, nyaman, tenang, dan menyenangkan dengan pendekatan layanan yang mengutamakan detail serta kepuasan konsumen.</p>
                     </div>
@@ -343,7 +344,7 @@
                             <div class="w-10 h-10 sm:w-14 sm:h-14 bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl flex items-center justify-center text-kkpBlue mb-4 sm:mb-5 group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors duration-300">
                                 <span class="material-icons-round text-xl sm:text-3xl">diamond</span>
                             </div>
-                            <h4 class="text-base min-[320px]:text-lg sm:text-2xl font-black text-white font-sans tracking-wide uppercase"><span class="text-2xl sm:text-4xl text-kkpBlue">P</span>restise &<br>Estetika</h4>
+                            <h4 class="text-base min-[320px]:text-lg sm:text-2xl font-black text-kkpbf font-sans tracking-wide uppercase"><span class="text-2xl sm:text-4xl text-kkpBlue">P</span>restise &<br>Estetika</h4>
                         </div>
                         <p class="text-gray-300 font-inter text-[11px] min-[320px]:text-xs sm:text-sm leading-relaxed text-justify relative z-10 mt-auto">Menampilkan identitas perusahaan melalui visual armada dan perjalanan yang elegan, berkelas, dan berestetika tinggi sebagai representasi kemewahan dan citra premium.</p>
                     </div>
@@ -358,7 +359,7 @@
                     <div class="inline-flex items-center justify-center w-12 h-12 sm:w-20 sm:h-20 bg-kkpDark border border-white/10 rounded-full mb-5 sm:mb-8 text-kkpBlue shadow-[0_0_20px_rgba(140,201,233,0.15)] group-hover:scale-110 transition-transform duration-500">
                         <span class="material-icons-round text-2xl sm:text-4xl">verified</span>
                     </div>
-                    <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide mb-5 sm:mb-8 drop-shadow-md">
+                    <h2 class="text-2xl min-[320px]:text-3xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide mb-5 sm:mb-8 drop-shadow-md">
                         KOMITMEN <span class="text-kkpBlue">PERUSAHAAN</span>
                     </h2>
                     <p class="text-gray-300 font-inter text-[11px] min-[320px]:text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-justify max-w-4xl mx-auto">

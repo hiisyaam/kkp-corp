@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -42,7 +43,7 @@
             
             <div class="absolute inset-x-0 top-[20%] sm:top-[25%] md:top-[25%] lg:top-[22%] px-4 text-center flex flex-col items-center z-10 pointer-events-none">
                 <h1 class="mb-1 md:mb-8 text-[11px] min-[375px]:text-[13px] sm:text-2xl md:text-4xl lg:text-[54px] font-black tracking-wider leading-tight uppercase italic drop-shadow-xl font-sans">
-                    <span class="text-kkpBlue">KIARASARI</span> <span class="text-kkpbf">KENCANA PASUNDAN</span>
+                    <span class="text-kkpBlue">KIARASARI</span> <span class="text-kkpbf font-semibold">KENCANA PASUNDAN</span>
                 </h1>
                 <p class="text-[8px] min-[375px]:text-[9px] sm:text-xs md:text-sm lg:text-3xl font-medium text-white font-sans drop-shadow-md tracking-wide">
                     <span class="italic text-kkpbf"><strong class="text-kkpBlue">Travel</strong> with <strong class="text-kkpBlue">Style</strong>, <strong class="text-kkpBlue">Arrive</strong> with <strong class="text-kkpBlue">Smile</strong></span>
@@ -106,7 +107,7 @@
                     <h3 class="text-kkpBlue font-bold font-sans text-[10px] sm:text-xs md:text-sm uppercase tracking-widest">Ekosistem KKP Corp</h3>
                     <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                 </div>
-                <h2 class="text-2xl min-[375px]:text-3xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide drop-shadow-md max-w-4xl">
+                <h2 class="text-2xl min-[375px]:text-3xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide drop-shadow-md max-w-4xl">
                     LAYANAN DAN KONSEP OPERASIONAL
                 </h2>
             </div>
@@ -123,7 +124,7 @@
                         <div class="bg-[#1c1c1c]/90 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-[0_30px_60px_rgba(0,0,0,0.6)] group-hover:border-kkpBlue/40 transition-colors duration-500 relative overflow-hidden">
                             <div class="absolute top-2 right-4 text-[80px] font-black text-white/5 font-sans italic leading-none z-0">01</div>
                             
-                            <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white font-sans uppercase italic mb-4 sm:mb-6 relative z-10">
+                            <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-kkpbf font-sans uppercase italic mb-4 sm:mb-6 relative z-10">
                                 PO. <span class="text-kkpBlue">Kiarasari</span>
                             </h3>
                             <p class="text-gray-300 font-inter text-[11px] min-[375px]:text-xs sm:text-sm md:text-base leading-relaxed text-justify relative z-10">
@@ -138,7 +139,7 @@
                         <div class="bg-[#1c1c1c]/90 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-[0_30px_60px_rgba(0,0,0,0.6)] group-hover:border-kkpBlue/40 transition-colors duration-500 relative overflow-hidden">
                             <div class="absolute top-2 left-4 text-[80px] font-black text-white/5 font-sans italic leading-none z-0">02</div>
                             
-                            <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white font-sans uppercase italic mb-4 sm:mb-6 relative z-10 pl-2">
+                            <h3 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-kkpbf font-sans uppercase italic mb-4 sm:mb-6 relative z-10 pl-2">
                                 <span class="text-kkpBlue">KKP</span> Garage
                             </h3>
                             <p class="text-gray-300 font-inter text-[11px] min-[375px]:text-xs sm:text-sm md:text-base leading-relaxed text-justify relative z-10">
@@ -156,14 +157,14 @@
                 <div class="relative flex flex-col md:flex-row items-center group">
                     <div class="w-full md:w-[60%] relative rounded-[2rem] overflow-hidden shadow-2xl z-0 h-[250px] sm:h-[350px] md:h-[450px] border border-white/10">
                         <div class="absolute inset-0 bg-kkpDark/30 group-hover:bg-transparent transition-all duration-700 z-10"></div>
-                        <img src="{{ asset('asset/image/kkp-hero.png') }}" alt="RM KKP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                        <img src="{{ asset('asset/image/kkp-ber-3.png') }}" alt="RM KKP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
                     </div>
                     
                     <div class="w-[90%] md:w-[50%] relative z-20 -mt-16 md:mt-0 md:-ml-24 mx-auto md:mx-0 order-2">
                         <div class="bg-[#1c1c1c]/90 backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-[0_30px_60px_rgba(0,0,0,0.6)] group-hover:border-kkpBlue/40 transition-colors duration-500 relative overflow-hidden">
                             <div class="absolute top-2 right-4 text-[80px] font-black text-white/5 font-sans italic leading-none z-0">03</div>
                             
-                            <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-white font-sans uppercase italic mb-4 sm:mb-6 relative z-10">
+                            <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black text-kkpbf font-sans uppercase italic mb-4 sm:mb-6 relative z-10">
                                 RM. <span class="text-kkpBlue">Kurnia Kencana Parahyangan</span>
                             </h3>
                             <p class="text-gray-300 font-inter text-[11px] min-[375px]:text-xs sm:text-sm md:text-base leading-relaxed text-justify relative z-10">
@@ -186,7 +187,7 @@
                     <h3 class="text-kkpBlue font-bold font-sans text-[10px] sm:text-xs md:text-sm uppercase tracking-widest">Galeri Kami</h3>
                     <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                 </div>
-                <h2 class="text-2xl min-[375px]:text-3xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide drop-shadow-md">
+                <h2 class="text-2xl min-[375px]:text-3xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide drop-shadow-md">
                     ARMADA & IDENTITAS VISUAL
                 </h2>
             </div>
@@ -197,7 +198,7 @@
                     <div class="absolute inset-0 bg-kkpDark/20 group-hover:bg-transparent transition-all duration-700 z-10"></div>
                     <img src="{{ asset('asset/image/kkp-ber-1.jpeg') }}" alt="Bus KKP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" />
                     <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 bg-gradient-to-t from-kkpDark/90 via-kkpDark/50 to-transparent z-20 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                        <h4 class="text-white font-bold font-sans text-sm sm:text-base lg:text-lg uppercase tracking-wide">Bus <span class="text-kkpBlue">KKP</span></h4>
+                        <h4 class="text-kkpbf font-bold font-sans text-sm sm:text-base lg:text-lg uppercase tracking-wide">Bus <span class="text-kkpBlue">KKP</span></h4>
                     </div>
                 </div>
 
@@ -205,15 +206,15 @@
                     <div class="absolute inset-0 bg-kkpDark/20 group-hover:bg-transparent transition-all duration-700 z-10"></div>
                     <img src="{{ asset('asset/image/kkp-ber-2.jpeg') }}" alt="KKP Garage" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" />
                     <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 bg-gradient-to-t from-kkpDark/90 via-kkpDark/50 to-transparent z-20 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                        <h4 class="text-white font-bold font-sans text-sm sm:text-base lg:text-lg uppercase tracking-wide"><span class="text-kkpBlue">KKP</span> Garage</h4>
+                        <h4 class="text-kkpbf font-bold font-sans text-sm sm:text-base lg:text-lg uppercase tracking-wide"><span class="text-kkpBlue">KKP</span> Garage</h4>
                     </div>
                 </div>
 
                 <div class="group relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[4/3] md:aspect-square lg:aspect-[4/3] shadow-lg border border-white/10 cursor-pointer">
                     <div class="absolute inset-0 bg-kkpDark/20 group-hover:bg-transparent transition-all duration-700 z-10"></div>
-                    <img src="{{ asset('asset/image/kkp-hero.png') }}" alt="RM KKP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" />
+                    <img src="{{ asset('asset/image/kkp-ber-3.png') }}" alt="RM KKP" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" />
                     <div class="absolute bottom-0 left-0 w-full p-4 sm:p-6 bg-gradient-to-t from-kkpDark/90 via-kkpDark/50 to-transparent z-20 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                        <h4 class="text-white font-bold font-sans text-sm sm:text-base lg:text-lg uppercase tracking-wide">RM <span class="text-kkpBlue">KKP</span></h4>
+                        <h4 class="text-kkpbf font-bold font-sans text-sm sm:text-base lg:text-lg uppercase tracking-wide">RM <span class="text-kkpBlue">KKP</span></h4>
                     </div>
                 </div>
 

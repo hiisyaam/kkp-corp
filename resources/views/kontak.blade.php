@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -22,6 +22,7 @@
                         kkpDark: "#262626",
                         kkpBlue: "#8cc9e9",
                         kkpBlueDark: "#5baacf",
+                        kkpbf:"#bfbfbf"
                     },
                     fontFamily: {
                         sans: ["Montserrat", "sans-serif"],
@@ -49,7 +50,7 @@
                     <h3 class="text-kkpBlue font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Pusat Informasi & Bantuan</h3>
                     <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                 </div>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white font-sans uppercase italic tracking-wide mb-4">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-kkpbf font-sans uppercase italic tracking-wide mb-4">
                     HUBUNGI <span class="text-kkpBlue">KAMI</span>
                 </h1>
                 <p class="text-gray-300 font-inter text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
@@ -66,8 +67,8 @@
                         <div class="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-kkpBlue mb-4 sm:mb-5 group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors duration-300 shadow-inner">
                             <span class="material-icons-round text-3xl">support_agent</span>
                         </div>
-                        <h4 class="text-lg sm:text-xl font-bold text-white font-sans uppercase tracking-wide mb-2">Layanan Pelanggan</h4>
-                        <p class="text-gray-400 font-inter text-xs sm:text-sm mb-4 leading-relaxed">Senin - Minggu (08:00 - 22:00 WIB)</p>
+                        <h4 class="text-lg sm:text-xl font-bold text-kkpbf font-sans uppercase tracking-wide mb-2">Layanan Pelanggan</h4>
+                        <p class="text-white font-inter text-xs sm:text-sm mb-4 leading-relaxed">Senin - Minggu (08:00 - 22:00 WIB)</p>
                         <a href="https://wa.me/6281315211836" target="_blank" class="text-xl sm:text-2xl font-black text-kkpBlue tracking-wider hover:text-white transition-colors">
                             0813-1521-1836*
                         </a>
@@ -78,8 +79,8 @@
                         <div class="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-kkpBlue mb-4 sm:mb-5 group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors duration-300 shadow-inner">
                             <span class="material-icons-round text-3xl">email</span>
                         </div>
-                        <h4 class="text-lg sm:text-xl font-bold text-white font-sans uppercase tracking-wide mb-2">Email</h4>
-                        <p class="text-gray-400 font-inter text-xs sm:text-sm mb-4 leading-relaxed">Untuk keperluan kemitraan dan informasi resmi.</p>
+                        <h4 class="text-lg sm:text-xl font-bold text-kkpbf font-sans uppercase tracking-wide mb-2">Email</h4>
+                        <p class="text-white font-inter text-xs sm:text-sm mb-4 leading-relaxed">Untuk keperluan kemitraan dan informasi resmi.</p>
                         <a href="mailto:ptkkp.kiarasari@gmail.com" class="text-lg sm:text-xl font-black text-kkpBlue tracking-wider hover:text-white transition-colors break-all">
                             ptkkp.kiarasari@gmail.com
                         </a>
@@ -89,8 +90,8 @@
                         <div class="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-kkpBlue mb-4 sm:mb-5 group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors duration-300 shadow-inner">
                             <span class="material-icons-round text-3xl">corporate_fare</span>
                         </div>
-                        <h4 class="text-lg sm:text-xl font-bold text-white font-sans uppercase tracking-wide mb-2">Kantor Pusat</h4>
-                        <p class="text-gray-400 font-inter text-xs sm:text-sm leading-relaxed max-w-[200px] mt-2">
+                        <h4 class="text-lg sm:text-xl font-bold text-kkpbf font-sans uppercase tracking-wide mb-2">Kantor Pusat</h4>
+                        <p class="text-white font-inter text-xs sm:text-sm leading-relaxed max-w-[200px] mt-2">
                             Soreang, Kab. Bandung<br>
                             Jawa Barat, Indonesia
                         </p>
@@ -109,7 +110,7 @@
                         <h3 class="text-kkpBlue font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Komunitas Virtual</h3>
                         <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                     </div>
-                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-black text-white font-sans uppercase italic tracking-wide mb-4 leading-tight">
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-black text-kkpbf font-sans uppercase italic tracking-wide mb-4 leading-tight">
                         IKUTI KAMI DI <span class="text-kkpBlue">SOSIAL MEDIA</span>
                     </h2>
                     <p class="text-gray-400 font-inter text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto">

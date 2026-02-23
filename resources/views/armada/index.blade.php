@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,6 +20,7 @@
                         kkpDark: "#262626",
                         kkpBlue: "#8cc9e9",
                         kkpBlueDark: "#5baacf",
+                        kkpbf:"#bfbfbf"
                     },
                     fontFamily: {
                         sans: ["Montserrat", "sans-serif"],
@@ -93,7 +94,7 @@
             </div>
 
             <div class="text-center mb-6 sm:mb-8">
-                <h2 class="text-2xl md:text-3xl font-black text-white font-sans uppercase tracking-widest drop-shadow-md">
+                <h2 class="text-2xl md:text-3xl font-black text-kkpbf font-sans uppercase tracking-widest drop-shadow-md">
                     Fasilitas <span class="text-kkpBlue">Kelas Armada</span>
                 </h2>
             </div>
@@ -123,7 +124,11 @@
                     'PRIORITY' => [
                         'tagline' => 'Eksklusivitas Kelas Premium Tanpa Batas',
                         'deskripsi' => 'Kelas tertinggi dengan fasilitas bagaikan hotel berjalan. Privasi penuh dan pelayanan pramugari eksklusif.'
-                    ]
+                    ],
+                    'IMPERIAL' => [
+                        'tagline' => 'Eksklusivitas Kelas Premium Tanpa Batas',
+                        'deskripsi' => 'Kelas tertinggi dengan fasilitas bagaikan hotel berjalan. Privasi penuh dan pelayanan pramugari eksklusif.'
+                    ],
                 ];
             @endphp
 
@@ -133,15 +138,19 @@
                     $currentDeskripsi = $deskripsiMap[$k->nama_kelas]['deskripsi'] ?? 'Fasilitas premium dan kenyamanan maksimal yang dirancang khusus untuk memenuhi standar tinggi perjalanan Anda.';
                     
                     $denahFileName = 'denah-' . strtolower(str_replace(' ', '-', $k->nama_kelas)) . '.png';
+                    $expectedInteriorName = 'interior-' . strtolower(str_replace(' ', '-', $k->nama_kelas)) . '.png';
+                    $interiorPath = file_exists(public_path('asset/image/' . $expectedInteriorName)) 
+                                    ? asset('asset/image/' . $expectedInteriorName) 
+                                    : asset('asset/image/interior-soon.png');
                 @endphp
 
                 <div id="content-{{ $index }}" class="class-content {{ $index !== 0 ? 'hidden' : '' }} transition-opacity duration-500 ease-in-out">
                     
                     <div class="relative w-full aspect-[4/3] sm:aspect-[16/9] lg:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 mb-8 sm:mb-12 group">
                         
-                        <img id="gallery-image" src="{{ asset('asset/image/kkp-hero.png') }}" alt="Interior {{ $k->nama_kelas }}" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-[1.03] transition-all duration-500 ease-in-out">
+                        <img id="gallery-image" src="{{ $interiorPath }}" alt="Interior {{ $k->nama_kelas }}" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-[1.03] transition-all duration-500 ease-in-out">
                         
-                        <div class="absolute inset-0 bg-gradient-to-t from-kkpDark via-kkpDark/60 to-transparent pointer-events-none"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-kkpDark via-kkpDark/20 to-transparent pointer-events-none"></div>
 
                         <button onclick="prevImage()" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 rounded-full border border-white/50 text-white flex items-center justify-center bg-black/40 backdrop-blur-sm hover:bg-kkpBlue hover:border-kkpBlue hover:text-kkpDark hover:scale-110 transition-all opacity-80 hover:opacity-100 z-30 focus:outline-none">
                             <span class="material-icons-round text-sm sm:text-2xl">arrow_back_ios_new</span>
@@ -154,7 +163,7 @@
                         <div class="absolute bottom-0 left-0 w-full p-5 sm:p-8 md:p-10 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 sm:gap-4 z-20 pointer-events-none">
                             
                             <div class="pointer-events-auto max-w-2xl pr-4">
-                                <h3 class="text-xl min-[375px]:text-3xl md:text-4xl font-black text-white font-sans mb-1 sm:mb-2 drop-shadow-lg">
+                                <h3 class="text-xl min-[375px]:text-3xl md:text-4xl font-black text-kkpbf font-sans mb-1 sm:mb-2 drop-shadow-lg">
                                     {{ $k->nama_kelas }}
                                 </h3>
                                 <p class="text-[10px] min-[375px]:text-xs sm:text-base font-bold text-kkpBlue font-inter mb-1 sm:mb-2 drop-shadow-md">
@@ -255,7 +264,7 @@
                         </div>
                         
                         <div class="mt-6 sm:mt-8 text-center">
-                            <p class="text-[9px] sm:text-[11px] text-gray-500 font-inter italic">*Ketersediaan fasilitas dapat berubah sewaktu-waktu</p>
+                            <p class="text-[9px] sm:text-[11px] text-white font-inter italic">*Ketersediaan fasilitas dapat berubah sewaktu-waktu</p>
                         </div>
                     </div>
 

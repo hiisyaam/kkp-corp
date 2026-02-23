@@ -3,7 +3,9 @@
 
             <div class="flex-1 flex items-center cursor-pointer">
                 <div class="w-12 h-12 flex items-center justify-center">
-                    <img src="{{ asset('asset/image/kkp.png') }}" alt="Logo KKP" class="object-contain">
+                    <a href="/">
+                        <img src="{{ asset('asset/image/kkp.png') }}" alt="Logo KKP" class="object-contain">
+                    </a>
                 </div>
             </div>
 
@@ -28,7 +30,7 @@
                         <a href="/agen" class="block text-sm font-inter text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2.5 rounded-xl transition-all">Layanan Agen</a>
                         <a href="/perjalanan" class="block text-sm font-inter text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2.5 rounded-xl transition-all">Layanan Rute</a>
                         <a href="/kelas" class="block text-sm font-inter text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2.5 rounded-xl transition-all">Layanan Kelas Armada</a>
-                        <a href="#" class="block text-sm font-inter text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2.5 rounded-xl transition-all">Layanan Rumah Makan</a>
+                        <a href="/rumah-makan" class="block text-sm font-inter text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2.5 rounded-xl transition-all">Layanan Rumah Makan</a>
                         <a href="/kontak-sosmed" class="block text-sm font-inter text-gray-300 hover:text-white hover:bg-white/10 px-4 py-2.5 rounded-xl transition-all">Contact Center & Social Media</a>
                     </div>
                 </div>
@@ -36,10 +38,31 @@
                 <a href="/kkp-plus" class="text-gray-300 hover:text-kkpBlue transition-colors font-semibold text-sm">KKP +</a>
                 <a href="/perusahaan" class="text-gray-300 hover:text-kkpBlue transition-colors font-semibold text-sm">Perusahaan</a>
             </div>
-
+            
             <div class="hidden lg:flex flex-1 justify-end items-center space-x-4">
-                <a href="/login" class="text-white hover:text-kkpBlue font-semibold text-sm transition-colors">Masuk</a>
-                <a href="/register" class="bg-white text-kkpDark px-5 py-2 rounded-full font-bold text-sm hover:bg-gray-200 transition-all">Daftar</a>
+    
+                @guest
+                    <a href="/login" class="text-white hover:text-kkpBlue font-semibold text-sm transition-colors">Masuk</a>
+                    <a href="/register" class="bg-white text-kkpDark px-5 py-2 rounded-full font-bold text-sm hover:bg-gray-200 transition-all shadow-md">Daftar</a>
+                @endguest
+
+                @auth
+                    <div class="flex items-center gap-4">
+                        <a href="/dashboard" 
+                        class="text-white hover:text-kkpBlue font-semibold text-sm transition-colors flex items-center gap-1.5">
+                            <span class="material-icons-round text-lg">account_circle</span>
+                            Hai, {{ explode(' ', Auth::user()->name)[0] }}
+                        </a>
+
+                        <form action="{{ route('logout') }}" method="POST" class="m-0 p-0">
+                            @csrf
+                            <button type="submit" class="bg-red-500/10 border border-red-500/30 text-red-400 px-5 py-2 rounded-full font-bold text-sm hover:bg-red-500 hover:text-white transition-all shadow-md flex items-center gap-1.5">
+                                Keluar <span class="material-icons-round text-sm">logout</span>
+                            </button>
+                        </form>
+                    </div>
+                @endauth
+
             </div>
 
             <div class="lg:hidden flex items-center justify-end flex-1">
@@ -74,7 +97,7 @@
                         <a href="/agen" class="block w-full text-gray-300 font-inter text-sm hover:text-kkpBlue py-2">Layanan Agen</a>
                         <a href="/perjalanan" class="block w-full text-gray-300 font-inter text-sm hover:text-kkpBlue py-2">Layanan Rute</a>
                         <a href="/kelas" class="block w-full text-gray-300 font-inter text-sm hover:text-kkpBlue py-2">Layanan Kelas Armada</a>
-                        <a href="#" class="block w-full text-gray-300 font-inter text-sm hover:text-kkpBlue py-2">Layanan Rumah Makan</a>
+                        <a href="/rumah-makan" class="block w-full text-gray-300 font-inter text-sm hover:text-kkpBlue py-2">Layanan Rumah Makan</a>
                         <a href="/kontak-sosmed" class="block w-full text-gray-300 font-inter text-sm hover:text-kkpBlue py-2">Contact Center & Social Media</a>
                     </div>
                 </div>
@@ -87,8 +110,31 @@
             <div class="h-px w-full bg-white/10 my-4"></div>
             
             <div class="flex gap-3 px-2">
-                <a href="/login" class="flex-1 text-center border border-white/20 text-white py-3 rounded-xl font-semibold text-sm hover:bg-white/10 transition-colors">Masuk</a>
-                <a href="/register" class="flex-1 text-center bg-white text-kkpDark py-3 rounded-xl font-bold text-sm hover:bg-gray-200 transition-colors">Daftar</a>
+    
+                @guest
+                    <a href="/login" class="flex-1 text-center border border-white/20 text-white py-3 rounded-xl font-semibold text-sm hover:bg-white/10 transition-colors">
+                        Masuk
+                    </a>
+                    <a href="/register" class="flex-1 text-center bg-white text-kkpDark py-3 rounded-xl font-bold text-sm hover:bg-gray-200 transition-colors">
+                        Daftar
+                    </a>
+                @endguest
+
+                @auth
+                    <a href="/dashboard" 
+                    class="flex-1 flex items-center justify-center gap-1.5 bg-kkpBlue text-kkpDark py-3 rounded-xl font-bold text-sm hover:bg-white transition-colors shadow-md">
+                        <span class="material-icons-round text-base">dashboard</span>
+                        Dashboard
+                    </a>
+                    
+                    <form action="{{ route('logout') }}" method="POST" class="flex-1 m-0 p-0 flex">
+                        @csrf
+                        <button type="submit" class="w-full flex items-center justify-center gap-1.5 border border-red-500/40 text-red-400 py-3 rounded-xl font-semibold text-sm hover:bg-red-500 hover:text-white transition-colors">
+                            Keluar <span class="material-icons-round text-base">logout</span>
+                        </button>
+                    </form>
+                @endauth
+
             </div>
         </div>
     </div>

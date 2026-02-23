@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { kkpDark: "#262626", kkpBlue: "#8cc9e9", kkpBlueDark: "#5baacf" },
+                    colors: { kkpDark: "#262626", kkpBlue: "#8cc9e9", kkpBlueDark: "#5baacf", kkpbf:"#bfbfbf" },
                     fontFamily: { sans: ["Montserrat", "sans-serif"], inter: ["Inter", "sans-serif"] },
                 },
             },
@@ -31,19 +31,16 @@
     <main class="flex-grow">
         
         <section class="relative w-full pt-32 pb-20 lg:pt-40 lg:pb-28 bg-kkpDark overflow-hidden flex items-center justify-center border-b border-white/5">
-            <img src="{{ asset('asset/image/kkp-hero.png') }}" alt="Background" class="absolute inset-0 w-full h-full object-cover opacity-20 object-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#1c1c1c] via-kkpDark/80 to-transparent"></div>
-
             <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-8 sm:mt-0">
                 <div class="inline-flex items-center gap-2 sm:gap-3 mb-4">
                     <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                     <h3 class="text-kkpBlue font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest drop-shadow-md">Eksplorasi Rute</h3>
                     <span class="w-6 sm:w-10 h-1 bg-kkpBlue rounded-full"></span>
                 </div>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white font-sans uppercase italic tracking-wide drop-shadow-2xl mb-4">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-kkpbf font-sans uppercase italic tracking-wide drop-shadow-2xl mb-4">
                     PILIH <span class="text-kkpBlue">WILAYAH TUJUAN</span>
                 </h1>
-                <p class="text-gray-300 font-inter text-xs sm:text-sm md:text-base max-w-2xl mx-auto drop-shadow-md">
+                <p class="text-white font-inter text-xs sm:text-sm md:text-base max-w-2xl mx-auto drop-shadow-md">
                     Jelajahi berbagai rute perjalanan dan jadwal armada KKP yang tersebar di berbagai wilayah untuk menemani perjalanan Anda.
                 </p>
             </div>
@@ -67,7 +64,7 @@
                                 <div class="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center text-kkpBlue mb-5 group-hover:bg-kkpBlue group-hover:text-kkpDark transition-colors duration-300">
                                     <span class="material-icons-round text-3xl">location_on</span>
                                 </div>
-                                <h4 class="text-xl sm:text-2xl font-black text-white font-sans tracking-wide uppercase">
+                                <h4 class="text-xl sm:text-2xl font-black text-kkpbf font-sans tracking-wide uppercase">
                                     {{ $w->nama_wilayah }}
                                 </h4>
                             </div>

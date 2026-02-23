@@ -9,7 +9,7 @@
                     </div>
                     <div class="my-3 italic">
                         <span class="font-bold text-2xl tracking-tight text-kkpBlue">KIARASARI</span>
-                        <p class="font-bold text-2xl tracking-tight text-white">KENCANA PASUNDAN</p>
+                        <p class="font-bold text-2xl tracking-tight text-kkpbf">KENCANA PASUNDAN</p>
                     </div>
                     <p class="font-inter text-gray-400 text-sm leading-relaxed">
                         Perusahaan otobus virtual terdepan yang menghadirkan standar baru dunia transportasi dengan
