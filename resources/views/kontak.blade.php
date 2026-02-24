@@ -133,27 +133,27 @@
                         <span class="material-icons-round text-gray-500 group-hover:text-white transition-colors transform group-hover:translate-x-1">arrow_forward_ios</span>
                     </a>
 
-                    <a href="#" class="group flex items-center justify-between p-4 sm:p-6 bg-[#262626]/50 border border-white/10 rounded-2xl hover:bg-[#1877F2] hover:border-transparent transition-all duration-300 shadow-md hover:-translate-y-1">
+                    <a href="https://www.facebook.com/dfworkshopmod" class="group flex items-center justify-between p-4 sm:p-6 bg-[#262626]/50 border border-white/10 rounded-2xl hover:bg-[#1877F2] hover:border-transparent transition-all duration-300 shadow-md hover:-translate-y-1">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-white/20 group-hover:border-transparent transition-colors shadow-inner">
                                 <i class="fa-brands fa-facebook-f text-2xl"></i>
                             </div>
                             <div class="flex flex-col">
                                 <span class="font-bold text-white font-sans text-sm sm:text-base tracking-wide">Facebook</span>
-                                <span class="text-[10px] sm:text-xs text-gray-400 group-hover:text-white/90 font-inter">Teu Nyahoo, sugan weh aya facenuk</span>
+                                <span class="text-[10px] sm:text-xs text-gray-400 group-hover:text-white/90 font-inter">dfworkshopmod</span>
                             </div>
                         </div>
                         <span class="material-icons-round text-gray-500 group-hover:text-white transition-colors transform group-hover:translate-x-1">arrow_forward_ios</span>
                     </a>
 
-                    <a href="#" class="group flex items-center justify-between p-4 sm:p-6 bg-[#262626]/50 border border-white/10 rounded-2xl hover:bg-[#FF0000] hover:border-transparent transition-all duration-300 shadow-md hover:-translate-y-1">
+                    <a href="https://youtube.com/@kkp-corporation?si=au-f5cOegeXX0XqY" class="group flex items-center justify-between p-4 sm:p-6 bg-[#262626]/50 border border-white/10 rounded-2xl hover:bg-[#FF0000] hover:border-transparent transition-all duration-300 shadow-md hover:-translate-y-1">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-white/20 group-hover:border-transparent transition-colors shadow-inner">
                                 <i class="fa-brands fa-youtube text-2xl"></i>
                             </div>
                             <div class="flex flex-col">
                                 <span class="font-bold text-white font-sans text-sm sm:text-base tracking-wide">YouTube</span>
-                                <span class="text-[10px] sm:text-xs text-gray-400 group-hover:text-white/90 font-inter">Ieu ge te apal urg mh</span>
+                                <span class="text-[10px] sm:text-xs text-gray-400 group-hover:text-white/90 font-inter">KKP Corp.</span>
                             </div>
                         </div>
                         <span class="material-icons-round text-gray-500 group-hover:text-white transition-colors transform group-hover:translate-x-1">arrow_forward_ios</span>

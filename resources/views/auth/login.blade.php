@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+    <link rel="icon" type="image/png" href="{{ asset('asset/image/logo-tab.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,6 +20,7 @@
                         kkpDark: "#262626",
                         kkpBlue: "#8cc9e9",
                         kkpBlueDark: "#5baacf",
+                        kkpbf:"#bfbfbf"
                     },
                     fontFamily: {
                         sans: ["Montserrat", "sans-serif"],
@@ -59,7 +60,7 @@
                     <div class="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-white/5 border border-white/10 rounded-2xl text-kkpBlue mb-4 shadow-inner">
                         <span class="material-icons-round text-2xl sm:text-3xl">login</span>
                     </div>
-                    <h1 class="text-2xl sm:text-3xl font-black text-white font-sans uppercase italic tracking-wide">
+                    <h1 class="text-2xl sm:text-3xl font-black text-kkpbf font-sans uppercase italic tracking-wide">
                         Selamat <span class="text-kkpBlue">Datang</span>
                     </h1>
                     <p class="text-gray-400 font-inter text-[11px] sm:text-sm mt-2">

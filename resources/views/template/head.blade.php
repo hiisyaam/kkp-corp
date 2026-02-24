@@ -42,8 +42,8 @@
         <div class="relative w-full max-w-[1920px] mx-auto overflow-hidden flex flex-col items-center">
             
             <div class="absolute inset-x-0 top-[20%] sm:top-[25%] md:top-[25%] lg:top-[22%] px-4 text-center flex flex-col items-center z-10 pointer-events-none">
-                <h1 class="mb-1 md:mb-8 text-[11px] min-[375px]:text-[13px] sm:text-2xl md:text-4xl lg:text-[54px] font-black tracking-wider leading-tight uppercase italic drop-shadow-xl font-sans">
-                    <span class="text-kkpBlue">KIARASARI</span> <span class="text-kkpbf font-semibold">KENCANA PASUNDAN</span>
+                <h1 class="mb-1 md:mb-8 text-[11px] min-[375px]:text-[13px] sm:text-2xl md:text-4xl lg:text-[54px] font-extrabold tracking-wider leading-tight uppercase italic drop-shadow-xl font-sans">
+                    <span class="text-kkpBlue">KIARASARI</span> <span class="text-kkpbf font-bold">KENCANA PASUNDAN</span>
                 </h1>
                 <p class="text-[8px] min-[375px]:text-[9px] sm:text-xs md:text-sm lg:text-3xl font-medium text-white font-sans drop-shadow-md tracking-wide">
                     <span class="italic text-kkpbf"><strong class="text-kkpBlue">Travel</strong> with <strong class="text-kkpBlue">Style</strong>, <strong class="text-kkpBlue">Arrive</strong> with <strong class="text-kkpBlue">Smile</strong></span>

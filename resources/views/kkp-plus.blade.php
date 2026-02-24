@@ -52,7 +52,7 @@
                     
                     <div class="inline-flex items-center gap-2 sm:gap-3 bg-white/5 border border-white/10 rounded-full px-4 sm:px-5 py-2 w-max shadow-lg backdrop-blur-sm mb-4 sm:mb-6">
                         <span class="material-icons-round text-kkpBlue text-sm">stars</span>
-                        <span class="text-white font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Execlusive Membership</span>
+                        <span class="text-white font-bold font-sans text-[10px] sm:text-xs uppercase tracking-widest">Exclusive Membership</span>
                     </div>
 
                     <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-black text-kkpbf font-sans uppercase italic tracking-wide leading-none drop-shadow-xl">
@@ -115,18 +115,20 @@
 
                 </div>
 
-                <div class="w-full lg:w-1/2 relative order-1 lg:order-2 flex justify-center lg:justify-end min-h-[300px] sm:min-h-[400px]">
-                    <div class="absolute right-0 top-1/2 -translate-y-1/2 w-3/4 h-[120%] bg-gradient-to-l from-white/5 to-transparent border-r border-y border-white/10 rounded-l-[3rem] -z-10 hidden lg:block"></div>
+                <div class="w-full lg:w-1/2 relative order-1 lg:order-2 flex justify-center lg:justify-end items-center min-h-[400px] lg:min-h-[600px] py-8 lg:py-0">
+                
+                <div class="relative w-full max-w-md lg:max-w-lg h-[450px] sm:h-[550px] lg:h-[650px] rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl group">
                     
-                    <div class="relative w-full max-w-lg aspect-square lg:aspect-[4/5] flex items-center justify-center group">
-                        <div class="absolute inset-0 bg-kkpBlue/20 rounded-full blur-[80px] group-hover:bg-kkpBlue/30 transition-all duration-700"></div>
-                        
-                        <img src="{{ asset('asset/image/kkp-hero.png') }}" alt="KKP Plus Armada" 
-                             class="w-full h-auto object-contain relative z-10 drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)] mix-blend-lighten transform group-hover:scale-105 transition-transform duration-700 ease-in-out" 
-                             style="-webkit-mask-image: radial-gradient(circle, black 50%, transparent 100%); mask-image: radial-gradient(circle, black 50%, transparent 100%);" />
-                    </div>
-                </div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-kkpBlue/30 rounded-full blur-[100px] -z-10 group-hover:bg-kkpBlue/40 transition-all duration-700 opacity-60"></div>
+                    
+                    <img src="{{ asset('asset/image/kkp-potrait.jpeg') }}" alt="Interior KKP Plus" 
+                        class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-in-out relative z-10" />
 
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1c1c1c] via-[#1c1c1c]/50 to-transparent z-20 pointer-events-none"></div>
+                    
+                    <div class="absolute inset-0 border border-white/10 rounded-[3rem] z-30 pointer-events-none bg-white/5 mix-blend-overlay"></div>
+                </div>
+            </div>
             </div>
         </div>
     </main>
