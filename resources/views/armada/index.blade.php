@@ -140,6 +140,10 @@
                 ];
             @endphp
 
+            @php
+                $allClassImages = [];
+            @endphp
+
             @foreach($kelas as $index => $k)
                 @php
                     $currentTagline = $deskripsiMap[$k->nama_kelas]['tagline'] ?? 'Nikmati Perjalanan Eksklusif Bersama Kami';
@@ -150,23 +154,48 @@
                     $interiorPath = file_exists(public_path('asset/image/' . $expectedInteriorName)) 
                                     ? asset('asset/image/' . $expectedInteriorName) 
                                     : asset('asset/image/interior-soon.png');
+
+                    // Scan class folder for multiple images
+                    $slug = strtolower(str_replace(' ', '-', $k->nama_kelas));
+                    $classImagesDir = public_path('asset/image/layanan-kelas/' . $slug);
+                    $classImages = [];
+                    if (is_dir($classImagesDir)) {
+                        $files = glob($classImagesDir . '/*');
+                        if ($files) {
+                            natsort($files);
+                            foreach ($files as $file) {
+                                if (is_file($file)) {
+                                    $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                                    if (in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp'])) {
+                                        $classImages[] = asset('asset/image/layanan-kelas/' . $slug . '/' . basename($file));
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (empty($classImages)) {
+                        $classImages[] = $interiorPath;
+                    }
+                    $allClassImages[$index] = $classImages;
                 @endphp
 
                 <div id="content-{{ $index }}" class="class-content {{ $index !== 0 ? 'hidden' : '' }} transition-opacity duration-500 ease-in-out">
                     
                     <div class="relative w-full aspect-[4/3] sm:aspect-[16/9] lg:h-[500px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 mb-8 sm:mb-12 group">
                         
-                        <img id="gallery-image" src="{{ $interiorPath }}" alt="Interior {{ $k->nama_kelas }}" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-[1.03] transition-all duration-500 ease-in-out">
+                        <img id="gallery-image-{{ $index }}" src="{{ $classImages[0] }}" alt="Interior {{ $k->nama_kelas }}" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-[1.03] transition-all duration-500 ease-in-out" style="transition: transform 0.5s ease-in-out, opacity 0.2s ease-in-out;">
                         
                         <div class="absolute inset-0 bg-gradient-to-t from-kkpDark via-kkpDark/20 to-transparent pointer-events-none"></div>
 
-                        <button onclick="prevImage()" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 rounded-full border border-white/50 text-white flex items-center justify-center bg-black/40 backdrop-blur-sm hover:bg-kkpBlue hover:border-kkpBlue hover:text-kkpDark hover:scale-110 transition-all opacity-80 hover:opacity-100 z-30 focus:outline-none">
+                        @if(count($classImages) > 1)
+                        <button onclick="prevImage({{ $index }})" class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 rounded-full border border-white/50 text-white flex items-center justify-center bg-black/40 backdrop-blur-sm hover:bg-kkpBlue hover:border-kkpBlue hover:text-kkpDark hover:scale-110 transition-all opacity-80 hover:opacity-100 z-30 focus:outline-none">
                             <span class="material-icons-round text-sm sm:text-2xl">arrow_back_ios_new</span>
                         </button>
 
-                        <button onclick="nextImage()" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 rounded-full border border-white/50 text-white flex items-center justify-center bg-black/40 backdrop-blur-sm hover:bg-kkpBlue hover:border-kkpBlue hover:text-kkpDark hover:scale-110 transition-all opacity-80 hover:opacity-100 z-30 focus:outline-none">
+                        <button onclick="nextImage({{ $index }})" class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-12 sm:h-12 rounded-full border border-white/50 text-white flex items-center justify-center bg-black/40 backdrop-blur-sm hover:bg-kkpBlue hover:border-kkpBlue hover:text-kkpDark hover:scale-110 transition-all opacity-80 hover:opacity-100 z-30 focus:outline-none">
                             <span class="material-icons-round text-sm sm:text-2xl pl-1">arrow_forward_ios</span>
                         </button>
+                        @endif
 
                         <div class="absolute bottom-0 left-0 w-full p-5 sm:p-8 md:p-10 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 sm:gap-4 z-20 pointer-events-none">
                             
@@ -316,6 +345,50 @@
                 tabContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             } else {
                 tabContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+
+        // Dynamic gallery state populated from PHP
+        const classGalleries = {!! json_encode($allClassImages) !!};
+        const currentImageIndexes = {};
+        Object.keys(classGalleries).forEach(key => {
+            currentImageIndexes[key] = 0;
+        });
+
+        function prevImage(classIndex) {
+            const images = classGalleries[classIndex];
+            if (!images || images.length <= 1) return;
+            
+            currentImageIndexes[classIndex] = (currentImageIndexes[classIndex] - 1 + images.length) % images.length;
+            updateGalleryImage(classIndex);
+        }
+
+        function nextImage(classIndex) {
+            const images = classGalleries[classIndex];
+            if (!images || images.length <= 1) return;
+            
+            currentImageIndexes[classIndex] = (currentImageIndexes[classIndex] + 1) % images.length;
+            updateGalleryImage(classIndex);
+        }
+
+        function updateGalleryImage(classIndex) {
+            const imgElement = document.getElementById('gallery-image-' + classIndex);
+            if (imgElement) {
+                // Smooth fade effect
+                imgElement.style.opacity = '0';
+                
+                setTimeout(() => {
+                    imgElement.src = classGalleries[classIndex][currentImageIndexes[classIndex]];
+                    
+                    imgElement.onload = () => {
+                        imgElement.style.opacity = '1';
+                    };
+                    
+                    // Fallback
+                    setTimeout(() => {
+                        imgElement.style.opacity = '1';
+                    }, 100);
+                }, 200);
             }
         }
 
