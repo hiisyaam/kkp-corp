@@ -102,32 +102,40 @@
             @php
                 $deskripsiMap = [
                     'ECONOMY' => [
-                        'tagline' => 'Perjalanan Ekonomis Tetap Nyaman',
-                        'deskripsi' => 'Nikmati perjalanan dengan harga terjangkau tanpa mengorbankan standar kenyamanan dan keamanan standar KKP.'
+                        'tagline' => 'Harga tiket super tipis, perjalanan kamu tetep manis',
+                        'deskripsi' => 'Jalan hemat tetap nikmat! Rasakan kenyamanan khas KKP yang ramah di kantong dan anti membosankan.'
                     ],
                     'BUSINESS' => [
-                        'tagline' => 'Kenyamanan Ekstra untuk Perjalanan Anda',
-                        'deskripsi' => 'Fasilitas lebih lengkap dengan ruang kaki yang lega untuk memastikan Anda beristirahat dengan baik.'
+                        'tagline' => 'Ruang kaki renggang, jalan jauh pun senang',
+                        'deskripsi' => 'Nikmati keleluasaan ekstra untuk bersandar rileks. Tiba di tujuan dengan tubuh yang tetap segar bugar!'
                     ],
                     'PREMIUM' => [
-                        'tagline' => 'Layanan Prioritas di Setiap Perjalanan',
-                        'deskripsi' => 'Hadir dengan privasi lebih dan fasilitas hiburan lengkap yang menemani perjalanan panjang Anda.'
+                        'tagline' => 'Nuansa berkelas, asiknya vibing tanpa batas',
+                        'deskripsi' => 'Rasakan perlakuan spesial dengan layanan prioritas yang bikin momen santaimu di jalan makin berkelas.'
                     ],
                     'EXECUTIVE' => [
-                        'tagline' => 'Pemandangan Luas Selama Perjalanan',
-                        'deskripsi' => 'Tempat terbaik untuk menikmati pemandangan yang dikombinasikan dengan kursi super nyaman untuk memanjakan Anda.'
+                        'tagline' => 'Duduk santai makin menawan, asik nikmati pemandangan',
+                        'deskripsi' => 'Duduk manis dan manjakan dirimu sambil menikmati indahnya panorama di sepanjang perjalanan. Anti gabut, pastinya!'
                     ],
-                    'SUPER EXE' => [
-                        'tagline' => 'Kemewahan di Atas Rata-rata',
-                        'deskripsi' => 'Ruang pribadi eksklusif dengan konfigurasi kursi renggang untuk kenyamanan istirahat paripurna.'
+                    'SUPER EXECUTIVE' => [
+                        'tagline' => 'Sentuhan mewah yang memanjakan, teman terbaik sepanjang perjalanan',
+                        'deskripsi' => 'Bawa standar istirahatmu ke level selanjutnya dengan sentuhan kemewahan ekstra yang super elegan.'
                     ],
                     'PRIORITY' => [
-                        'tagline' => 'Eksklusivitas Kelas Premium Tanpa Batas',
-                        'deskripsi' => 'Kelas tertinggi dengan fasilitas bagaikan hotel berjalan. Privasi penuh dan pelayanan pramugari eksklusif.'
+                        'tagline' => 'Eksklusif itu yang utama, rasanya persis hotel bintang lima',
+                        'deskripsi' => 'Pengalaman menginap berkedok perjalanan darat! Nikmati pelayanan tingkat tinggi layaknya tamu kehormatan.'
                     ],
                     'IMPERIAL' => [
-                        'tagline' => 'Eksklusivitas Kelas Premium Tanpa Batas',
-                        'deskripsi' => 'Kelas tertinggi dengan fasilitas bagaikan hotel berjalan. Privasi penuh dan pelayanan pramugari eksklusif.'
+                        'tagline' => 'Pelayanan berkelas bagaikan raja, kenyamanan absolut selalu terjaga',
+                        'deskripsi' => 'Dedikasi khusus untuk selera tertinggimu. Hadirkan ketenangan dan pelayanan super eksklusif di setiap kilometernya.'
+                    ],
+                    'LUXURY' =>[
+                        'tagline' => 'Kesan megah begitu kentara, pengalaman mewah tiada tara',
+                        'deskripsi' => 'Puncak kemegahan jalan darat. Didesain khusus untuk pengalaman bepergian yang paling estetik dan elegan.'
+                    ],
+                    'SUITES COMPARTEMENT' =>[
+                        'tagline' => 'Rebahan santai sangat maksimal, tidur nyenyak paling optimal',
+                        'deskripsi' => 'Rasakan sensasi tidur terlelap layaknya di kasur kesayangan, dan bangun di kota tujuan dengan energi penuh!'
                     ],
                 ];
             @endphp
