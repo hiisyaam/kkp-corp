@@ -273,7 +273,7 @@
                             @if($k->dispenser)
                             <div class="w-20 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center p-2 bg-white/5 rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all border border-transparent hover:border-white/10 group">
                                 <span class="material-icons-round text-2xl sm:text-3xl text-gray-300 group-hover:text-white mb-1 sm:mb-2">water_drop</span>
-                                <span class="text-[9px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Air<br>Mineral</span>
+                                <span class="text-[9px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Dispenser</span>
                             </div>
                             @endif
 
