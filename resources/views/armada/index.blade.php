@@ -272,7 +272,10 @@
 
                             @if($k->dispenser)
                             <div class="w-20 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center p-2 bg-white/5 rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all border border-transparent hover:border-white/10 group">
-                                <span class="material-icons-round text-2xl sm:text-3xl text-gray-300 group-hover:text-white mb-1 sm:mb-2">water</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 sm:w-8 sm:h-8 text-gray-300 group-hover:text-white mb-1 sm:mb-2 transition-colors">
+                                    <path d="M18 6V4h2V2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14v-2h-4.03c1.23-.91 2.03-2.36 2.03-4v-5H8v5c0 1.64.81 3.09 2.03 4H6V4h2v2c0 .55.45 1 1 1h8c.55 0 1-.45 1-1m-8 10v-3h6v3c0 1.65-1.35 3-3 3s-3-1.35-3-3"/>
+                                    <circle cx="13" cy="9" r="1"/>
+                                </svg>
                                 <span class="text-[9px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Dispenser</span>
                             </div>
                             @endif
