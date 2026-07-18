@@ -298,6 +298,41 @@
                             </div>
                             @endif
 
+                            @if($k->food_service)
+                            <div class="w-20 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center p-2 bg-white/5 rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all border border-transparent hover:border-white/10 group">
+                                <span class="material-icons-round text-2xl sm:text-3xl text-gray-300 group-hover:text-white mb-1 sm:mb-2">restaurant</span>
+                                <span class="text-[8px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Food<br>Service</span>
+                            </div>
+                            @endif
+
+                            @if($k->rice_box)
+                            <div class="w-20 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center p-2 bg-white/5 rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all border border-transparent hover:border-white/10 group">
+                                <span class="material-icons-round text-2xl sm:text-3xl text-gray-300 group-hover:text-white mb-1 sm:mb-2">lunch_dining</span>
+                                <span class="text-[8px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Rice<br>Box</span>
+                            </div>
+                            @endif
+
+                            @if($k->snack_box)
+                            <div class="w-20 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center p-2 bg-white/5 rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all border border-transparent hover:border-white/10 group">
+                                <span class="material-icons-round text-2xl sm:text-3xl text-gray-300 group-hover:text-white mb-1 sm:mb-2">cookie</span>
+                                <span class="text-[8px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Snack<br>Box</span>
+                            </div>
+                            @endif
+
+                            @if($k->minerall)
+                            <div class="w-20 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center p-2 bg-white/5 rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all border border-transparent hover:border-white/10 group">
+                                <span class="material-icons-round text-2xl sm:text-3xl text-gray-300 group-hover:text-white mb-1 sm:mb-2">water_full</span>
+                                <span class="text-[8px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Air<br>Mineral</span>
+                            </div>
+                            @endif
+
+                            @if($k->exclusive_lounge)
+                            <div class="w-20 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center p-2 bg-white/5 rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all border border-transparent hover:border-white/10 group">
+                                <span class="material-icons-round text-2xl sm:text-3xl text-gray-300 group-hover:text-white mb-1 sm:mb-2">weekend</span>
+                                <span class="text-[8px] sm:text-[10px] font-bold font-sans uppercase tracking-wider text-gray-400 group-hover:text-kkpBlue text-center leading-tight px-1">Exclusive<br>Lounge</span>
+                            </div>
+                            @endif
+
                         </div>
                         
                         <div class="mt-6 sm:mt-8 text-center">
