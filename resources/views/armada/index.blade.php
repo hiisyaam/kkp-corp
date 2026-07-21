@@ -68,10 +68,10 @@
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             
-            <div class="w-full flex justify-center mb-8 sm:mb-10 relative">
+            <!-- <div class="w-full flex justify-center mb-8 sm:mb-10 relative">
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-[200px] bg-kkpBlue/10 blur-[80px] rounded-full pointer-events-none"></div>
                 <img src="{{ asset('asset/image/kkp-hero.png') }}" alt="Armada KKP" class="w-full max-w-4xl h-auto object-contain relative z-10 drop-shadow-2xl mix-blend-lighten" style="-webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%); mask-image: linear-gradient(to bottom, black 80%, transparent 100%);">
-            </div>
+            </div> -->
 
             <div class="relative w-full flex items-center justify-center mb-10 sm:mb-16 group">
                 <button onclick="scrollTabs('left')" class="hidden md:flex w-10 h-10 rounded-full bg-white/5 border border-white/10 items-center justify-center hover:bg-kkpBlue hover:border-kkpBlue hover:text-kkpDark transition-all text-gray-400 absolute left-0 z-10 shadow-lg">
